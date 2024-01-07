@@ -34,12 +34,12 @@ def initObjects(dateIn = datetime.now().strftime("%Y-%m-%d")):
                     ["https://news.mit.edu/topic/artificial-intelligence2",
                     "https://news.mit.edu/topic/computers",
                     "https://news.mit.edu/topic/computer-vision"], 
-                    "2023",
+                    "2024",
                     True)
     guardPage = webPage("https://www.theguardian.com/",
                         dateIn,
                         ["https://www.theguardian.com/technology/artificialintelligenceai"],
-                        "2023")
+                        "2024")
     bbcPage = webPage("https://www.bbc.com",
                     dateIn,
                     ["https://www.bbc.com/mundo/topics/cwr9j26ddr5t?page=1"],
