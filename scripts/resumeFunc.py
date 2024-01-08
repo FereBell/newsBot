@@ -13,6 +13,7 @@ def resumeInfo(listPages):
                     "Computer Science")
     translator = GoogleTranslator(source='en', target='es')
     resume = []
+    links = []
     for page in listPages:
         try:
             #print(Fore.BLUE + f'Revieweing page: {page.baseUrl}')
@@ -23,9 +24,10 @@ def resumeInfo(listPages):
                     outputOrg = extSum(link)
                     outputEsp = translator.translate(outputOrg)
                     resume.append(outputEsp)
+                    links.append(link)
         except Exception as e:
             print(Fore.RED + f"Error at: {e}")
-    return resume
+    return resume, links
 
 """
 Using a ML model to check the relation between the post and the

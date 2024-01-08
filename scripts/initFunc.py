@@ -21,7 +21,7 @@ def menu():
         while not val01:
             date = input("Introduce la fecha con el siguiente formato YYYY-MM-DD: ")
             val01 = verificar_formato(date)
-        listPages = initObjects(date)
+        listPages = initObjects(date) 
     return resumeInfo(listPages)
 
 def verificar_formato(fecha):
