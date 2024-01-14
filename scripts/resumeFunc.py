@@ -21,7 +21,7 @@ def resumeInfo(listPages):
                 if isRelated(getWebContent(link), topicRelated):
                     #print(Fore.BLUE + f"Link: {link}")
                     #outputOrg = article.summarize(getWebContent(link)[:4500])
-                    outputOrg = extSum(link)
+                    outputOrg = extSum(link, 5)
                     outputEsp = translator.translate(outputOrg)
                     resume.append(outputEsp)
                     links.append(link)
