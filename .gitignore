@@ -1,2 +1,3 @@
 scripts/__pycache__/*
-*.txt
+test/__pycache__/*
+TelegramKey.txt
