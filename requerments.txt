@@ -2,4 +2,7 @@ colorama
 beautifulsoup4
 python-telegram-bot
 requests
+sumy
 htmldate
+deep-translator
+python-telegram-bot[job-queue]

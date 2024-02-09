@@ -16,7 +16,7 @@ async def noticias(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = update.effective_message.chat_id
     try:
         context.job_queue.run_daily(dailyNews,
-                                    time= time(hour=23, minute=31, second=0, tzinfo=timezone(timedelta(hours=-6))),
+                                    time= time(hour=00, minute=4, second=0, tzinfo=timezone(timedelta(hours=-6))),
                                     days= (0,1,2,3,4,5,6), chat_id=chat_id, name=str(chat_id))
         await update.effective_message.reply_text("Todo listo para mantenerte informado !!!")     
     except Exception as e:
