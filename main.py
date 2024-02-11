@@ -10,13 +10,13 @@ from telegram.ext import (
     MessageHandler,
     filters
     )
-#listPages = initObjects()
+listPages = initObjects()
 
 async def noticias(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = update.effective_message.chat_id
     try:
         context.job_queue.run_daily(dailyNews,
-                                    time= time(hour=00, minute=4, second=0, tzinfo=timezone(timedelta(hours=-6))),
+                                    time= time(hour=00, minute=50, second=0, tzinfo=timezone(timedelta(hours=-6))),
                                     days= (0,1,2,3,4,5,6), chat_id=chat_id, name=str(chat_id))
         await update.effective_message.reply_text("Todo listo para mantenerte informado !!!")     
     except Exception as e:
@@ -24,15 +24,12 @@ async def noticias(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 async def dailyNews(context: ContextTypes.DEFAULT_TYPE):
-    await context.bot.send_message(context.job.chat_id, text=f"Beep! seconds are over!")
-    '''
+    #await context.bot.send_message(context.job.chat_id, text=f"Beep! seconds are over!")
     resume, links = resumeInfo(listPages)
     for r, l in zip(resume, links):
         message = f'URL: {l} \n \
             --New--: {r}'
-        await context.bot.send_message(chat_id=update.effective_chat.id,
-                                    text= message)
-    '''
+        await context.bot.send_message(context.job.chat_id, text= message)
 
 async def stringMessage(update: Update, context: ContextTypes.DEFAULT_TYPE):
     startString = "No puedo procesar tu solicitud, manda /help para mas información"
