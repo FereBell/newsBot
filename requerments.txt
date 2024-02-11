@@ -6,3 +6,4 @@ sumy
 htmldate
 deep-translator
 python-telegram-bot[job-queue]
+python -c "import nltk; nltk.download('punkt')"
