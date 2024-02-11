@@ -16,10 +16,10 @@ def resumeInfo(listPages):
     links = []
     for page in listPages:
         try:
-            #print(Fore.BLUE + f'Revieweing page: {page.baseUrl}')
+            print(Fore.BLUE + f'Revieweing page: {page.baseUrl}')
             for link in page.saveLinks:
                 if isRelated(getWebContent(link), topicRelated):
-                    #print(Fore.BLUE + f"Link: {link}")
+                    print(Fore.BLUE + f"Link: {link}")
                     #outputOrg = article.summarize(getWebContent(link)[:4500])
                     outputOrg = extSum(link, 5)
                     outputEsp = translator.translate(outputOrg)
