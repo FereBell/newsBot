@@ -1,4 +1,4 @@
-from colorama import Fore
+import sqlite3
 from telegram import Update
 from scripts.initFunc import initObjects
 from scripts.resumeFunc import resumeInfo
@@ -10,7 +10,10 @@ from telegram.ext import (
     MessageHandler,
     filters
     )
+
 listPages = initObjects()
+conn = sqlite3.connect('usuarios.db')
+cursor = conn.cursor()
 
 async def noticias(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = update.effective_message.chat_id
