@@ -14,6 +14,14 @@ from telegram.ext import (
 listPages = initObjects()
 conn = sqlite3.connect('usuarios.db')
 cursor = conn.cursor()
+cursor.execute('''
+    CREATE TABLE IF NOT EXISTS usuarios (
+        id INTEGER PRIMATY KEY AUTOINCREMENT,
+        chat_id INEGER,
+        numero TEXT       
+    )
+''')
+conn.commit()
 
 async def noticias(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = update.effective_message.chat_id
