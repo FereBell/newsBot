@@ -7,7 +7,7 @@ def verificar_formato(fecha):
     return bool(patron.match(fecha))   
 
 def initObjects(dateIn = datetime.now().strftime("%Y-%m-%d")):
-    dateIn = "2024-02-09"
+    dateIn = '2024-02-15'
     mitPage = webPage("https://news.mit.edu",
                     dateIn,
                     ["https://news.mit.edu/topic/artificial-intelligence2",
@@ -33,12 +33,23 @@ def initObjects(dateIn = datetime.now().strftime("%Y-%m-%d")):
                         ["https://www.nature.com/"],
                         "articles",
                         True)
-    
+    techcrunch = webPage("https://techcrunch.com/",
+                         dateIn,
+                         ["https://techcrunch.com/"],
+                         "2024")
+    theNextWeb = webPage("https://thenextweb.com",
+                         dateIn,
+                         ["https://thenextweb.com"],
+                         "news",
+                         True)
+
     mitPage.obtainAllLinks()
     guardPage.obtainAllLinks()
     bbcPage.obtainAllLinks()
     wiredPage.obtainAllLinks()
     naturePage.obtainAllLinks()
-    listPages = (mitPage, guardPage, bbcPage, wiredPage, naturePage)
+    techcrunch.obtainAllLinks()
+    theNextWeb.obtainAllLinks()
+    listPages = (mitPage, guardPage, bbcPage, wiredPage, naturePage, techcrunch, theNextWeb)
     
     return listPages

@@ -1,3 +1,5 @@
 scripts/__pycache__/*
 test/__pycache__/*
 TelegramKey.txt
+usuarios.db
+test.ipynb
