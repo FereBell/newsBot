@@ -49,10 +49,14 @@ class webPage:
         self.saveLinks = []
         tmp = []
         links = self.searchLinks(url)
+        print(Fore.GREEN + '================')
         for href in links:
             if href and self.keyWord in href and href not in tmp:
                 fullUrl = self.baseUrl + href if self.useBase else href
+                print(Fore.GREEN + f'Scratch URL {fullUrl}')
                 if self.dateChecker(fullUrl) == currentDate:
+                    print(Fore.GREEN + f'Link added')
+                    print(Fore.GREEN + "/////////////////////")
                     self.saveLinks.append(fullUrl)
                 tmp.append(href)
 

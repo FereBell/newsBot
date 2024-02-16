@@ -10,17 +10,18 @@ def resumeInfo(listPages):
     topicRelated = ("Artificial intelligence", "Deep learning", "Gan", "Gans", "Machine learning",
                     "LLM", "AI", "Generative adversial neuronal network", "Neuronal network",
                     "Convolutional neuronal network", "OpenIA", "Large lengual model", "Computer Vision",
-                    "Computer Science")
+                    "Computer Science", "Clustering", "AI", "Meta", "Chatbot", "GPU", "Reinforcement learning",
+                    "AI models", "coding", "Multi-Objective Optimization", "Algorithms")
     translator = GoogleTranslator(source='en', target='es')
     resume = []
     links = []
     for page in listPages:
         try:
-            print(Fore.BLUE + f'Revieweing page: {page.baseUrl}')
-            for link in page.saveLinks:
+            print(Fore.BLUE + '========================')
+            for link in page.allLinks:
+                print(Fore.BLUE + f'Revieweing page: {page.allLinks}')
                 if isRelated(getWebContent(link), topicRelated):
-                    print(Fore.BLUE + f"Link: {link}")
-                    #outputOrg = article.summarize(getWebContent(link)[:4500])
+                    print(Fore.YELLOW + f"Link: {link}")
                     outputOrg = extSum(link, 5)
                     outputEsp = translator.translate(outputOrg)
                     resume.append(outputEsp)
