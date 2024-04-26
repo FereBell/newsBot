@@ -1,0 +1,6 @@
+Reddit está implementando algunas actualizaciones nuevas en sus aplicaciones de iOS y Android para que a las personas les resulte más fácil localizar y participar en conversaciones en la plataforma.
+Dado que gran parte del atractivo de Reddit se basa en su capacidad para fomentar conversaciones sobre numerosos temas, tiene sentido que la plataforma adopte un enfoque que priorice la conversación en sus aplicaciones móviles.
+En un intento por crear un flujo más fluido entre los tipos de publicaciones en Reddit, la compañía está introduciendo un reproductor multimedia unificado por el que los usuarios pueden deslizarse para ver los comentarios y ver contenido nuevo.
+Además, ahora, cuando los usuarios hagan clic en el botón de comentarios de una publicación en el feed, serán llevados directamente a la parte superior de los comentarios.
+Reddit también introdujo una barra de contexto que se ubica en la parte superior de la página, lo que permite a los usuarios regresar a la publicación o sumergirse en el contenido con un solo toque.
+--- https://techcrunch.com/2024/04/24/reddit-is-making-it-easier-to-navigate-conversations-on-its-mobile-apps/ ---

@@ -7,40 +7,48 @@ def verificar_formato(fecha):
     return bool(patron.match(fecha))   
 
 def initObjects(dateIn = datetime.now().strftime("%Y-%m-%d")):
-    dateIn = '2024-02-15'
+    #dateIn = '2024-04-11'
     mitPage = webPage("https://news.mit.edu",
                     dateIn,
                     ["https://news.mit.edu/topic/artificial-intelligence2",
                     "https://news.mit.edu/topic/computers",
                     "https://news.mit.edu/topic/computer-vision"], 
                     "2024",
-                    True)
+                    "mitpage",
+                    True
+                    )
     guardPage = webPage("https://www.theguardian.com/",
                         dateIn,
                         ["https://www.theguardian.com/technology/artificialintelligenceai"],
-                        "2024")
+                        "2024",
+                        "guardPage")
     bbcPage = webPage("https://www.bbc.com",
                     dateIn,
                     ["https://www.bbc.com/mundo/topics/cwr9j26ddr5t?page=1"],
-                    "articles")
+                    "articles",
+                    "bbcPage")
     wiredPage = webPage("https://www.wired.com",
                         dateIn,
                         ["https://www.wired.com/tag/artificial-intelligence/"],
                         "story",
+                        "wiredPage",
                         True)
     naturePage = webPage("https://www.nature.com/",
                         dateIn,
                         ["https://www.nature.com/"],
                         "articles",
+                        "naturePage",
                         True)
     techcrunch = webPage("https://techcrunch.com/",
                          dateIn,
                          ["https://techcrunch.com/"],
-                         "2024")
+                         "2024",
+                         "techcrunch")
     theNextWeb = webPage("https://thenextweb.com",
                          dateIn,
                          ["https://thenextweb.com"],
                          "news",
+                         "theNextWeb",
                          True)
 
     mitPage.obtainAllLinks()
@@ -49,7 +57,6 @@ def initObjects(dateIn = datetime.now().strftime("%Y-%m-%d")):
     wiredPage.obtainAllLinks()
     naturePage.obtainAllLinks()
     techcrunch.obtainAllLinks()
-    theNextWeb.obtainAllLinks()
-    listPages = (mitPage, guardPage, bbcPage, wiredPage, naturePage, techcrunch, theNextWeb)
+    listPages = (mitPage, guardPage, wiredPage, techcrunch)
     
     return listPages

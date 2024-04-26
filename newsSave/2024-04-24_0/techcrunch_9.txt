@@ -1,0 +1,6 @@
+Sin un SDK que acompañe a una API, los usuarios de API se ven obligados a leer los documentos de la API y crear todo ellos mismos, lo cual no es la mejor experiencia.
+La solución de Rattray es Inoxidable, que incorpora una especificación API y genera SDK en una variedad de lenguajes de programación, incluidos Python, TypeScript, Kotlin, Go y Java.
+"Stainless utiliza IA generativa para producir una 'configuración de Inoxidable' inicial para los clientes, que luego depende de ellos ajustar su API", explicó.
+Inoxidable tiene "docenas" de clientes de pago en su versión beta, dijo Rattray, y algunos de los SDK que ha generado, incluido el SDK Python de OpenAI, reciben millones de descargas por semana.
+"Dado que las API siguen siendo los componentes básicos de la integración de servicios como los LLM en las aplicaciones, la experiencia de primera mano de Alex como pionero del sistema de codegen API de Stripe lo posiciona de manera única para convertir a Stainless en la plataforma por excelencia para interacciones API fluidas y de alta calidad".
+--- https://techcrunch.com/2024/04/24/stainless-is-helping-openai-anthropic-and-others-build-sdks-for-their-apis/ ---

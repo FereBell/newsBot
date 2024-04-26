@@ -6,7 +6,7 @@ from scripts.htmlInfo import getWebContent
 from deep_translator import GoogleTranslator
 from sumy.summarizers.text_rank import TextRankSummarizer
 
-def resumeInfo(listPages):
+def resumeInfo(listPages, logger):
     topicRelated = ("Artificial intelligence", "Deep learning", "Gan", "Gans", "Machine learning",
                     "LLM", "AI", "Generative adversial neuronal network", "Neuronal network",
                     "Convolutional neuronal network", "OpenIA", "Large lengual model", "Computer Vision",
@@ -15,20 +15,21 @@ def resumeInfo(listPages):
     translator = GoogleTranslator(source='en', target='es')
     resume = []
     links = []
+    names = []
+    logger.info("STARTING GETTING LINKS")
     for page in listPages:
         try:
-            print(Fore.BLUE + '========================')
-            for link in page.allLinks:
-                print(Fore.BLUE + f'Revieweing page: {page.allLinks}')
+            for val, link in enumerate(page.allLinks):
                 if isRelated(getWebContent(link), topicRelated):
-                    print(Fore.YELLOW + f"Link: {link}")
                     outputOrg = extSum(link, 5)
                     outputEsp = translator.translate(outputOrg)
                     resume.append(outputEsp)
                     links.append(link)
+                    names.append(f"{page.name}_{val}")
+                    logger.info("ADDING LINK")
         except Exception as e:
-            print(Fore.RED + f"Error at: {e}")
-    return resume, links
+            logger.error(f" ERROR AT THE RESUME- {e}")
+    return resume, links, names
 
 """
 Using a ML model to check the relation between the post and the

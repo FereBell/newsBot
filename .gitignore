@@ -1,5 +1,8 @@
-scripts/__pycache__/*
-test/__pycache__/*
+logging/*.*
+newsSave/*.*
+scripts/__pycache__
+GoogleGemini.txt
+OpenIA.txt
 TelegramKey.txt
-usuarios.db
 test.ipynb
+usuarios.db
