@@ -1,0 +1,6 @@
+Otra regla que Nova AI no sigue: mientras que un montón de nuevas empresas de IA se están construyendo sobre el GPT líder en la industria de OpenAI, Nova AI está utilizando Chat GPT-4 de OpenAI lo menos posible.
+Si bien OpenAI promete que los datos de quienes tienen un plan de negocios pago no se utilizarán para entrenar sus modelos, las empresas aún no confían en OpenAI, nos dice Smith.
+OpenAI está defendiéndose de una serie de demandas de quienes no quieren que utilice su trabajo para la capacitación de modelos, o creen que su trabajo terminó, sin autorización y sin remuneración, en sus resultados.
+Utiliza herramientas OpenAI solo para ayudarlo a generar código y realizar algunas tareas de etiquetado, y está haciendo todo lo posible para no enviar ningún dato del cliente a OpenAI.
+"En este caso, en lugar de utilizar los modelos de incrustación de OpenAI, implementamos nuestros propios modelos de incrustación de código abierto para que cuando necesitemos ejecutar cada archivo, no solo lo enviemos a OpenAI", explicó Smith.
+--- https://techcrunch.com/2024/04/24/why-code-testing-startup-nova-ai-uses-open-source-llms-more-than-openai/ ---

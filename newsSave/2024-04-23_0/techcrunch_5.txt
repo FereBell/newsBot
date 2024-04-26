@@ -1,0 +1,6 @@
+En ese momento, la gente pensaba que la posibilidad de crear un avatar virtual y usarlo para comunicarse con tus amigos era sólo una moda pasajera.
+Cuando comienzas a usar Easel por primera vez, capturas unos segundos de tu rostro para que la empresa pueda crear un modelo de IA personal y usarlo para generar pegatinas.
+La startup ha optado por integrar Easel en la aplicación nativa de Mensajes de iOS para que no tengas que mudarte a una nueva plataforma y crear un nuevo gráfico social, solo para intercambiar divertidas pegatinas personales.
+También es un caso de uso relajado para Easel, ya que puedes desplazarte hasta encontrar una calcomanía que te guste, tocar "remezclar" y enviar una calcomanía similar (pero con tu propia cara) a tus amigos.
+"La segunda es que Easel permite a las personas permanecer en el momento", añadió, señalando que a veces simplemente no quieres sacar tu teléfono y capturar el momento.
+--- https://techcrunch.com/2024/04/23/with-easel-ex-snap-researchers-are-building-the-next-generation-bitmoji-thanks-to-ai/ ---

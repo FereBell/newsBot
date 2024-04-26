@@ -1,0 +1,6 @@
+El modelo completo es demasiado grande para almacenarlo en el dispositivo, pero al dividirlo en pedazos y reutilizarlos tanto como sea posible, los chips IMC reducen la cantidad de datos que deben moverse de un lado a otro.
+En un ataque de sondeo de bus, el hacker puede robar bits del modelo y del conjunto de datos sondeando la comunicación entre el acelerador y la memoria fuera del chip.
+En tercer lugar, para mejorar la seguridad, generaron la clave que descifra el cifrado directamente en el chip, en lugar de moverlo de un lado a otro con el modelo.
+La adición de seguridad redujo la eficiencia energética del acelerador y también requirió un área de chip más grande, lo que encarecería su fabricación.
+El equipo planea explorar métodos que podrían reducir el consumo de energía y el tamaño de su chip en el futuro, lo que facilitaría su implementación a escala.
+--- https://news.mit.edu/2024/tiny-chip-safeguards-user-data-while-enabling-efficient-computing-0423 ---
