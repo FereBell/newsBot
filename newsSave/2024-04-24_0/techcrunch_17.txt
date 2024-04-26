@@ -1,6 +1,0 @@
-Comenzó con la adquisición de Red Hat por 34 mil millones de dólares en 2018, continuó con la adquisición de Apptio el año pasado y continuó el miércoles cuando la compañía anunció que adquiriría el proveedor de gestión de la nube HashiCorp por 6,4 mil millones de dólares.
-Con HashiCorp, Big Blue obtiene un conjunto de herramientas de seguridad y gestión del ciclo de vida de la nube, y una empresa que está creciendo considerablemente más rápido que cualquiera de los otros negocios de IBM, aunque los ingresos son pequeños para los estándares de IBM: 155 millones de dólares el último trimestre, un 15% más que el anterior. año anterior.
-Combinar la cartera y la experiencia de IBM con las capacidades y el talento de HashiCorp creará una plataforma integral de nube híbrida diseñada para la era de la IA”, dijo en un comunicado.
-Esta misma semana, la compañía presentó un nuevo concepto de plataforma con el lanzamiento de Infrastructure Cloud, un concepto que debería encajar perfectamente dentro del catálogo de productos de nube híbrida de IBM.
-Si IBM trata a HashiCorp de manera similar a Red Hat, la empresa mantendría su independencia dentro de la familia de productos IBM.
---- https://techcrunch.com/2024/04/24/ibm-moves-deeper-into-hybrid-cloud-management-with-6-4b-hashicorp-acquisition/ ---
