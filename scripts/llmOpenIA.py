@@ -10,7 +10,8 @@ def readAPI():
 
 def resumeBetter(txt, logger):
     try:
-        client = OpenAI(api_key = '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')
+        key = readAPI()
+        client = OpenAI(api_key = key)
         mensajes = [{"role": "system", "content": "Experto escritor de micro notas",}]
         mensajes.append({"role": "user", "content": "Mejora la coherencia del siguiente texto: " + txt,})
         chat = client.chat.completions.create(
