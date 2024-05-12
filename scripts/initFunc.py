@@ -7,7 +7,6 @@ def verificar_formato(fecha):
     return bool(patron.match(fecha))   
 
 def initObjects(dateIn = datetime.now().strftime("%Y-%m-%d")):
-    #dateIn = '2024-04-11'
     mitPage = webPage("https://news.mit.edu",
                     dateIn,
                     ["https://news.mit.edu/topic/artificial-intelligence2",

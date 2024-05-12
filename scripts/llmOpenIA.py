@@ -1,3 +1,6 @@
+'''
+from langchain_community.llms import Ollama
+'''
 from openai import OpenAI
 
 def readAPI():
@@ -7,8 +10,7 @@ def readAPI():
 
 def resumeBetter(txt, logger):
     try:
-        key = readAPI()
-        client = OpenAI(api_key = key)
+        client = OpenAI(api_key = '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')
         mensajes = [{"role": "system", "content": "Experto escritor de micro notas",}]
         mensajes.append({"role": "user", "content": "Mejora la coherencia del siguiente texto: " + txt,})
         chat = client.chat.completions.create(
@@ -20,6 +22,15 @@ def resumeBetter(txt, logger):
     except Exception as e:
         logger.error(f'ERROR IN THE BETTER RESUME - {e}')
         return "False"
+'''
+def resumeBetterLocal(txt, logger):
+    try:
+        llm = Ollama(model = "llama3")
+        return llm.invoke(f'Mejora la coherencia del siguiente texto, no agregues comentarios propios solo regresa el resultado y en español: {txt}')
+    except Exception as e:
+        logger.error(f"ERROR IN THE BETTER RESUME - {e}")
+        return "False"
+'''
     
 if __name__ == "__main__":
     print(resumeBetter("Si claro como de que no sabes que hacer"))
