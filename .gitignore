@@ -1,8 +1,3 @@
 logging/*.*
 newsSave/*.*
 scripts/__pycache__
-GoogleGemini.txt
-OpenIA.txt
-TelegramKey.txt
-test.ipynb
-usuarios.db
