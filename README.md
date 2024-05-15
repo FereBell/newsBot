@@ -14,13 +14,14 @@ AI News Summarizer and Telegram Bot es una herramienta que busca notas sobre Int
 ```bash
 ├── logging/
 │   └── 2024-04-23        # .log generado diariamente
+│
 ├── newsSave/
 │   └── 2024-04-23_0      # Carpeta con notas encontradas en la 
 │       │                 # primera busqueda del dia
 │       ├── mitpage_0     # Primera nota encontrada en MIT
 │       └── wiredPage_0   # Primera nota encontrada en wired
 │
-├── scripts               # Módulos
+├── scripts/              # Módulos
 │   ├── helpFunctions.py  # Genera índices aleatorios para noticias
 │   ├── htmlInfo.py       # Extrae y limpia contenido web
 │   ├── initFunc.py       # Inicializa objetos de páginas web
@@ -48,7 +49,6 @@ AI News Summarizer and Telegram Bot es una herramienta que busca notas sobre Int
 
 - [YouTube](https://youtube.com/@ferebell-ia202?si=jHk48xPbQZ0k2M-4)
 - [Instagram](https://www.instagram.com/ferebell.ia?igsh=em85NGgwY2x4MXNn) 📸
-- LinkedIn: [¡Conéctate conmigo en LinkedIn!](www.linkedin.com/in/rafael-ortiz-feregrino-7bab01186) 💼
 
 
 ### Licencia
